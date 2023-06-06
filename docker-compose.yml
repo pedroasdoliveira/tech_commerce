@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  front:
+    container_name: trato_tech
+    restart: unless-stopped
+    image: trato_tech_image
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: Development
+    ports:
+      - 3200:5600

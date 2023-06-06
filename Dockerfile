@@ -1,4 +1,4 @@
-FROM node 
+FROM node as Development
 
 ENV NODE_ENV=development
 
